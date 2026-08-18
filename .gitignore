@@ -1,0 +1,36 @@
+# --- Secrets -----------------------------------------------------------
+# Never commit real credentials. These patterns have no leading slash, so
+# they match at any depth in the repo, not just the root.
+.env
+.env.*
+.env.local
+*.pem
+*.key
+
+# npm auth tokens land here (//registry.npmjs.org/:_authToken=...).
+# Remove this line if you need to commit non-secret registry config.
+.npmrc
+
+# Do commit a template so others know which vars are needed.
+!.env.example
+!.env.sample
+
+# --- Dependencies ------------------------------------------------------
+node_modules/
+
+# --- Logs and diagnostics ---------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Generated output --------------------------------------------------
+products.clean.csv
+
+# --- OS / editor cruft -------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

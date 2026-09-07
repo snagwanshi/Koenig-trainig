@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "3132d39f0ca70b943192221d335d73b2"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+name = "vg-lab-3.2"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,read_orders,write_draft_orders,read_customers"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[webhooks]
+api_version = "2026-10"
+
+[events]
+api_version = "unstable"
+subscription = []
+
+[build]
+automatically_update_urls_on_dev = true

@@ -1,0 +1,2 @@
+this lab is about to shopify mcp. here we will be building a custom shopify mcp server using node.js
+8th Sept 2026

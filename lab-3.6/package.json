@@ -1,0 +1,18 @@
+{
+  "name": "shopify-tool-agent",
+  "version": "1.0.0",
+  "description": "Lab 3.6 — Claude Agent SDK agent whose tools call the real Shopify Storefront and Admin APIs, with zod I/O guards and a confirmation gate on the write tool",
+  "main": "agent.js",
+  "scripts": {
+    "start": "node agent.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.238",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  }
+}

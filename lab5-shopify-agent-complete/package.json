@@ -1,0 +1,21 @@
+{
+  "name": "lab5-shopify-agent-complete",
+  "version": "1.0.0",
+  "description": "Lab 5 — Shopify UCP server (catalog/cart/checkout/order over MCP) plus a Claude Agent SDK client that discovers and consumes it.",
+  "main": "agent.js",
+  "scripts": {
+    "server": "node ucp-server/server.js",
+    "agent": "node agent.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.238",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "zod": "^4.5.4"
+  }
+}
